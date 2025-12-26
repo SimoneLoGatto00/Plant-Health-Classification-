@@ -6,7 +6,7 @@
 This project addresses a **binary image classification** problem: given an RGB image of a plant, the task is to predict whether it is **healthy** or **unhealthy**.  
 The solution is based on **Convolutional Neural Networks (CNNs)** and **transfer learning** on several pre-trained architectures.  
 
-The project was developed as part of the *Artificial Neural Networks and Deep Learning* course at Politecnico di Milano. The main goals are:
+The main goals are:
 - building a clean and balanced dataset,
 - comparing custom CNNs and modern pre-trained models,
 - evaluating performance both on a local test set and on hidden **remote test sets** provided via CodaLab.
@@ -36,11 +36,7 @@ using stratified sampling and a fixed random seed to ensure reproducibility.
 
 ### 🌱 Dataset Examples  
 
-<!-- TODO: insert an image showing sample healthy vs unhealthy leaves -->
-<!-- Example:
-![Sample images (healthy vs unhealthy)](figures/sample_images_healthy_unhealthy.png)
--->
-
+<img src="figures/sample_images_healthy_unhealthy.png" width="600">
 ---
 
 ## 3) Data Cleaning and Preprocessing  
