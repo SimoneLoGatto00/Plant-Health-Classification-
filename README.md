@@ -36,7 +36,8 @@ using stratified sampling and a fixed random seed to ensure reproducibility.
 
 ### 🌱 Dataset Examples  
 
-<img src="figures/sample_images_healthy_unhealthy.png" width="600">
+<img src="figures/sample_images_healthy_unhealthy.png" width="500">
+
 ---
 
 ## 3) Data Cleaning and Preprocessing  
@@ -60,13 +61,6 @@ Because the healthy class is about 1.8 times more frequent, class imbalance is i
 - **translations**  
 
 Later in the project, a different strategy is also considered: **downsampling** the majority (healthy) class to match the size of the unhealthy class, which proves very effective for ConvNeXt-based models.
-
-### 🔄 Data Augmentation Examples  
-
-<!-- TODO: insert an image showing original vs augmented samples -->
-<!-- Example:
-![Data augmentation examples](figures/data_augmentation_examples.png)
--->
 
 ---
 
@@ -181,19 +175,13 @@ With this pipeline, ConvNeXtLarge achieves:
 These results make ConvNeXtLarge the **best-performing model** overall.  
 Attempts to freeze/unfreeze different blocks or further reduce the learning rate do not improve over this best configuration.
 
-### 📉 Training Curves (ConvNeXtLarge)  
-
-<!-- TODO: insert an image with train/validation accuracy/loss curves for ConvNeXtLarge -->
-<!-- Example:
-![Training curves (ConvNeXtLarge)](figures/training_curves_convnextlarge.png)
--->
-
 ### 🔎 Confusion Matrix (ConvNeXtLarge)  
 
-<!-- TODO: insert an image with the 2×2 confusion matrix for ConvNeXtLarge -->
-<!-- Example:
-![Confusion matrix (ConvNeXtLarge)](figures/confusion_matrix_convnextlarge.png)
--->
+- Accuracy: 0.8771
+- Precision: 0.8775
+- Recall: 0.8771
+- F1: 0.8771
+<img src="figures/confusion_matrix_convnextlarge.png" width="500">
 
 ---
 
@@ -207,10 +195,7 @@ Overall performance across the main models can be summarized as follows:
 
 ### 📊 Model Comparison  
 
-<!-- TODO: insert an image with a bar chart comparing accuracy (and/or F1) across models -->
-<!-- Example:
-![Model comparison](figures/model_comparison.png)
--->
+<img src="figures/bar_chart.png" width="500">
 
 ---
 
